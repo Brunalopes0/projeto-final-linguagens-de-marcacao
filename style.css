@@ -65,10 +65,21 @@ section {
     align-items: center;   /*centralizar fotos*/
 }
 
+.card img {
+    transition: 0.3s;
+}
+
+.card img:hover {
+    width: 240px;
+}
+
+
+
 .um{
     width: 220px;
     margin-right: 210px;
     border-radius: 15px;
+    transition: font-size 0.5s;
  }
 
 .dois{
@@ -81,18 +92,11 @@ section {
     width: 220px;
     border-radius: 15px;
 }
-
-.card a{
-    font-size:80px;
-    transition: font-size;
-}                              /*transição das fotos*/
-.card a:hover {
-    font-size: 150px;
-}
+ 
 
 .vermais{
     margin-top: 100px;
-    text-align: center;
+    text-align: center;    /*texto no centro*/
    
 }
 
@@ -100,12 +104,13 @@ button {
    padding: 15px 60px;
    background-color: rgb(6, 6, 110);
    color: white;
-   border-radius: 15px;
+   border-radius: 15px;  /*bordas*/
+   transition: 0.3s;
 }
 
 button:hover{
     background-color:rgba(6, 6, 110, 0.658) ;
-    font-size:medium;
+    font-size: 17px;
 }
 
 
@@ -142,7 +147,7 @@ button:hover{
 
 .generos{
     display: flex;            
-    justify-content: center;
+    justify-content: center;  /*alinha os itens no centro junto com display*/
     align-items: center;  
     margin-top: -150px; 
 }
@@ -152,14 +157,15 @@ button:hover{
    margin-right: 40px;
    background-color:  rgb(12, 12, 90);
    color: white;
-   border-radius: 15px;
-   transition: color 0.5s;
+   border-radius: 15px;    /*adiciona bordas*/
+   transition: 0.3s;
 
 }
 
 
 .butao :hover{
     background-color: rgba(0, 0, 139, 0.801);
+    font-size: 17px;
 }
 
 
@@ -183,7 +189,7 @@ footer p {
 @media (max-width: 600px) {
 
   body {
-    background-color:white;
+    background-color: white;
   }
 
 }
